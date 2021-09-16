@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Courier Services</title>
+
+</head>
+<body>
+<div class="sticky">
+    <div class="header">
+        <h1>COURIER SERVICES</h1>
+        <p>welcome</p>
+      </div>      
+</div>
+
+<div class="topnav">
+    <a class="active" href="index.html">HOME</a> 
+    <a href="track.html">TRACK</a> 
+    <a href="addcourier.html">ADD COURIER</a> 
+    <a href="aboutus.html">ABOUT US</a> 
+    <a href="contact.html">CONTACT</a>
+    <a href="services.html">SERVICES</a>
+    
+    <a href="login.html" style="float:right">LOGIN</a>
+    <a href="signup.html" style="float:right">SIGN-UP</a>
+</div>
+
+<div class="row">
+    <h2 style="text-align:center">CTS </h2>
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="https://img.freepik.com/free-vector/order-delivery-service-online-background_73174-203.jpg?size=626&ext=jpg" name="img" width=100
+    height=700 style="width:100%">
+    <div class="text"><a href="track.html">Track</a>
+    </div>
+  </div>
+
+  
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+</div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+function showSlides(n, no) {
+ var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<div class="footer">
+  <h2><a href="tac.html">Terma and Conditions</a></h2>
+
+</div>
+</body>
+</html>
